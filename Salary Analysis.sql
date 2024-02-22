@@ -118,7 +118,12 @@ GROUP BY e.Job_Title,
 		e.Experience_Level,
         e.Salary_in_USD,
         e.Employee_Residence
-ORDER BY e.Salary_in_USD DESC;  
+ORDER BY e.Salary_in_USD DESC;  #This is to demonstrate complex self-join method 
+#OR
+SELECT Job_Title, Experience_Level, Salary_in_USD, Employee_Residence
+FROM latest_data_science_salaries
+WHERE Expertise_Level = 'Expert' AND Year BETWEEN 2021 AND 2023
+ORDER BY Salary_in_USD DESC;
 
 #TOP 3 highest salary earners in Expert level
 SELECT e.Job_Title,
@@ -133,3 +138,9 @@ GROUP BY e.Job_Title,
         e.Employee_Residence
 ORDER BY e.Salary_in_USD DESC
 LIMIT 3; 
+#OR
+SELECT Job_Title, Experience_Level, Salary_in_USD, Employee_Residence
+FROM latest_data_science_salaries
+WHERE Expertise_Level = 'Expert' AND Year BETWEEN 2021 AND 2023
+ORDER BY Salary_in_USD DESC
+LIMIT 3;
