@@ -8,7 +8,7 @@ Ranking salaries
 Comparing salaries by experience level
 Identifying duplicate records
 Formatting salaries as currency
-## Usage
+### Usage
 The SQL code is designed to work with a sample database schema containing a single table latest_data_science_salaries with columns like:
 Salary_in_USD - The salary amount in USD
 Job_Title - Job title of the employee
