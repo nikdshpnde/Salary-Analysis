@@ -45,7 +45,8 @@ FROM latest_data_science_salaries
 GROUP BY Job_Title,
 		Second_Highest
 ORDER BY Second_Highest DESC
-LIMIT 1 OFFSET 2;  #nth highest salary change offset value accordingly. Index starts at 0
+LIMIT 1 OFFSET 2;  #nth highest salary: change offset value accordingly. Index starts at 0
+	
 #Dense Rank
 SELECT Salary_in_USD,
        DENSE_RANK() OVER (ORDER BY Salary_in_USD DESC) AS 'Rank'
