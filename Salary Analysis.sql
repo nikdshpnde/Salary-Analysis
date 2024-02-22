@@ -9,7 +9,7 @@ USE Salary_Analysis;
 
 # I used the table import feature rather than a create table command.
 	#If you are no aware of how to use this feature, please follow the steps:
-	#1. Expand the Salary_Analysis Schema
+	#1. Expand the Salary_Analysis Schema 
 	#2. Right Click on Tables and Select Table Data Import wizard
 	#3. Click on Browse to open the file
 	#4. Click on Next and select Create New Table. (by default the active schema is selected and the file name is taken as a table name)
